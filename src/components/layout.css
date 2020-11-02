@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #232741;
   color: #ffffff !important;
   height: 100vh;
@@ -37,7 +37,7 @@ a {
 
 @media (max-width: 767px) {
   #imggg {
-    width: 90%!important;
+    width: 90% !important;
   }
 }
 
@@ -50,38 +50,38 @@ main {
     display: none;
   }
   #imggg {
-    width: 70%!important;
+    width: 70% !important;
   }
 }
 
 .navbar-brand {
-  background-image: linear-gradient(90deg, #2bde8c, #5ce865);
+  background-image: linear-gradient(90deg, #ff5733, #5ce865);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent !important;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .navbar-brand:hover {
-  background-image: linear-gradient(to right, #5ce865, #2bde8c);
+  background-image: linear-gradient(to right, #ff5733, #5ce865);
   color: transparent !important;
 }
 
 .cv-download {
-  background-image: linear-gradient(to right, #2bde8c, #5ce865);
+  background-image: linear-gradient(to right, #ff5733, #5ce865);
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2bde8c, #5ce865);
+  background: -webkit-linear-gradient(to right, #ff5733, #5ce865);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2bde8c, #5ce865);
+  background: linear-gradient(to right, #ff5733, #5ce865);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border-radius: 2px;
 }
 
 .cv-download:hover {
-  background-image: linear-gradient(to right, #5ce865, #2bde8c);
+  background-image: linear-gradient(to right, #ff5733, #5ce865);
 }
 .nav-link:hover {
-  color: #2bde8c !important;
+  color: #ff5733 !important;
 }
 
 @media (min-width: 1500px) {

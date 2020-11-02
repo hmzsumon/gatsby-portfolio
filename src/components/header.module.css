@@ -1,16 +1,15 @@
-
 .active {
-  border-bottom: 2px solid #5ce865;
+  border-bottom: 2px solid #ff5733;
 }
 
-
-.desktopNav li a{
+.desktopNav li a {
   color: #ffffff !important;
 }
 
 /* Normal desktop :992px. */
 
-@media (min-width: 992px) and (max-width: 1200px) {}
+@media (min-width: 992px) and (max-width: 1200px) {
+}
 
 /* Tablet desktop :768px. */
 

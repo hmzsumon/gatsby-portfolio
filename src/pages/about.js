@@ -66,7 +66,7 @@ const About = () => {
                   <button className="text-uppercase">
                     {" "}
                     <a
-                      href="http://freepdfhosting.com/73a1f9ce2e.pdf"
+                      href="https://pdfhost.io/v/D7sc2VeH0_Zakarias_Resume_3pdf.pdf"
                       rel="noopener noreferrer"
                       target="_blank"
                     >

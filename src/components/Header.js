@@ -63,7 +63,7 @@ const Header = () => {
           <li className="nav-item cv-download">
             <a
               className="nav-link"
-              href="https://pdfhost.io/v/D7sc2VeH0_Zakarias_Resume_3pdf.pdf "
+              href="https://pdfhost.io/v/D7sc2VeH0_Zakarias_Resume_3pdf.pdf"
               rel="noopener noreferrer"
               target="_blank"
             >

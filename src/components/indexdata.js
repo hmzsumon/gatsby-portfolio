@@ -41,8 +41,11 @@ const Person = {
       img: "https://i.ibb.co/5RJTTsV/Cuda-Protfolio-Template.png",
       link: "https://cuda-01.netlify.app/",
       git: "https://github.com/hmzsumon/psd-to-html01",
-      title: "React Dashboard",
-      description: "This site design for practice. This is PSD to HTML Site",
+      title: "PSD to HTML",
+      description:
+        "This site design for practice. PSD to HTML fully responsive and pixel-perfect design",
+      Technology:
+        " HTML5 , CSS3 , Owl-carousel , Bootstrap , FontAwsome , Jquery",
     },
     // {
     //   img: "https://i.ibb.co/fDCm8gS/image.png",

@@ -39,10 +39,10 @@
   height: 35%;
   width: 25px;
   content: "";
-  background-color: #46798d;
-  top: 0;
+  background-image: linear-gradient(to top, #ff5733, #5ce865);
+  bottom: 0;
   left: 0;
-  border-radius: 0 0 50px 0;
+  border-radius: 0 50px 0 0;
 }
 
 .portfolioImageContainer::after {
@@ -50,10 +50,10 @@
   height: 35%;
   width: 25px;
   content: "";
-  background-color: #8b7b9c;
-  bottom: 0;
+  background-image: linear-gradient(to bottom, #ff5733, #5ce865);
+  top: 0;
   right: 0;
-  border-radius: 50px 0 0 0;
+  border-radius: 0 0 0 50px;
 }
 
 .detailsArea a {

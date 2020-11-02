@@ -1,17 +1,14 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <a href="https://manikroy.netlify.app/">
-    <img alt="manikroy" src="https://i.ibb.co/RDJ0Q37/image.png" width="600px" />
+  <a href="https://zakaria-sumon.netlify.app/">
+    <img alt="Zakaria" src="https://i.ibb.co/QbKNn7R/Zakaria.png" width="600px" />
   </a>
 </p>
 <h1 align="center">
   Gatsby's Portfolio site
 </h1>
 
-
-
 ## 🚀 Quick start
-
 
 1.  **Open the source code and start editing!**
 

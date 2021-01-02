@@ -41,3 +41,5 @@ const Component = () => {
       },
     },
 ```
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5af0a647-c195-40c7-b92f-7f37f9d7f3f6/deploy-status)](https://app.netlify.com/sites/zakaria-sumon/deploys)

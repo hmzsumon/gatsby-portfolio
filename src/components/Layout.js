@@ -1,71 +1,22 @@
-import React, { useEffect, useState } from 'react';
-import Header from './Header';
-import Footer from './Footer';
-import './layout.css'
-import Parcelcomponent from './Parcelcomponent';
-import { motion, AnimatePresence } from 'framer-motion';
-
-const duration = 0.5
-
-const variants = {
-  initial: {
-    opacity: 0,
-  },
-  enter: {
-    opacity: 1,
-    transition: {
-      duration: duration,
-      delay: duration,
-      when: 'beforeChildren',
-    },
-  },
-  exit: {
-    opacity: 0,
-    transition: { duration: duration },
-  },
-}
-
+import React from "react"
+// import "../css/main.css"
+import Navbar from "./Navbar"
+import Sidebar from "./Sidebar"
+import Footer from "./Footer"
 const Layout = ({ children }) => {
-  // location.pathname = location.pathname || '/';
-  const [ddd, setDdd] = useState({})
-  useEffect(() => {
-    // setDdd({ ...window.location })
-    setDdd(prev => {
-      return {
-        ...window.location
-      }
-    })
-  }, [children])
-
-  const [homePage, setHomePage] = useState(true);
-
-  useEffect(() => {
-      if(window.location.pathname === '/') {
-        setHomePage(true)
-      } else {
-        setHomePage(false)
-      }
-
-  }, [children])
+  const [isOpen, setIsOpen] = React.useState(false)
+  const toggleSidebar = () => {
+    setIsOpen(!isOpen)
+  }
 
   return (
     <>
-     {homePage && <Parcelcomponent/>}
-      <Header />
-      <AnimatePresence>
-        <motion.main
-          key={ddd.pathname}
-          variants={variants}
-          initial="initial"
-          animate="enter"
-          exit="exit"
-        >
-          {children}
-        </motion.main>
-      </AnimatePresence>
+      <Navbar toggleSidebar={toggleSidebar} />
+      <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
+      {children}
       <Footer />
     </>
-  );
-};
+  )
+}
 
-export default Layout;
+export default Layout

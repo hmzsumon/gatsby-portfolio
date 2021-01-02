@@ -1,21 +1,43 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://zakaria-sumon.netlify.app/">
-    <img alt="Zakaria" src="https://i.ibb.co/QbKNn7R/Zakaria.png" width="600px" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's Portfolio site
-</h1>
+# COMPLETE PROJECT SETUP
 
-## 🚀 Quick start
+In order to use complete project you will need:
 
-1.  **Open the source code and start editing!**
+1. Strapi Instance with all Contet-Types and at least single instance of data (for each content-type). Check gatsby-config
+2. Permissions for all content-type's
 
-    You can edit data from components directory indexData.js file
+## Setup Notes
 
-    Your site is now running at `http://localhost:8000`!
+1. All components ready to go (including imports)
+2. Use main.css - less imports
+3. Limit amount of components - better overview
+4. React Icons
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+[react icons] :https://react-icons.github.io/react-icons/
 
-    Open the `my-hello-world-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+```javascript
+import { FaHome } from "react-icons/fa"
+const Component = () => {
+  return <FaHome className="icon"></FaHome>
+}
+```
+
+5. Use constants to avoid repetition.
+6. In order to follow along with the video use my backend (url below)
+
+   [strapi backend]:https://github.com/john-smilga/strapi-gatsby-porfolio-2020-api
+
+7. Make sure such content-types exist in your Strapi application. Or replace/delete them in gatsby-config.js
+
+```javascript
+{
+      resolve: `gatsby-source-strapi`,
+      options: {
+        apiURL: `http://localhost:1337`,
+        queryLimit: 1000, // Default to 100
+        // contentTypes: [`jobs`, `projects`, `blogs`, ],
+        //singleTypes:[`about` ]
+        contentTypes: [`jobs`, `projects`, `blogs`],
+        singleTypes: [`about`],
+      },
+    },
+```

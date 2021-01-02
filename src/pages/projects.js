@@ -1,34 +1,32 @@
 import React from "react"
 import Layout from "../components/Layout"
 import { graphql } from "gatsby"
-import Blogs from "../components/Blogs"
+import Projects from "../components/Projects"
 import SEO from "../components/SEO"
 
-const Blog = ({
+const ProjectsPage = ({
   data: {
-    allStrapiBlogs: { nodes: blogs },
+    allStrapiProjects: { nodes: projects },
   },
 }) => {
   return (
     <Layout>
-      <SEO title="Blog" />
-      <section className="blog-page">
-        <Blogs blogs={blogs} title="blog" />
+      <SEO title="Projects" />
+      <section className="projects-page">
+        <Projects projects={projects} title="all projects" />
       </section>
     </Layout>
   )
 }
-
 export const query = graphql`
   {
-    allStrapiBlogs {
+    allStrapiProjects {
       nodes {
-        slug
-        desc
-        date(formatString: "MMMM Do, YYYY")
+        github
         id
+        description
         title
-        category
+        url
         image {
           childImageSharp {
             fluid {
@@ -36,8 +34,13 @@ export const query = graphql`
             }
           }
         }
+        stack {
+          id
+          title
+        }
       }
     }
   }
 `
-export default Blog
+
+export default ProjectsPage
